@@ -226,7 +226,7 @@ nav {
     to { opacity: 1; }
 }
 
-/* Responsive */
+   /* Responsive Mobile */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -240,20 +240,22 @@ nav {
         z-index: 100;
     }
     .nav-links.active { display: flex; }
-    .menu-btn { display: block; }.hologram-container {
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
+    .menu-btn { display: block; }
 
+    .hologram-container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
 .form-style-6 {
     font: 95% Arial, Helvetica, sans-serif;
     max-width: 500px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(255, 215, 0, 0.05); /* Latar transparan kekuningan */
-    border: 1px solid var(--primary);     /* Garis pinggir emas */
+    background: rgba(255, 215, 0, 0.05);
+    border: 1px solid var(--primary);
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
 }
