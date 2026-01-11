@@ -3,91 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farhan Hidayat | Portfolio</title>
+    <title>SYSTEM.ROOT | Farhan Hidayat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=VT323&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <canvas id="matrix-bg"></canvas>
+    <div class="scanlines"></div>
+    
     <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <img src="logo.png" alt="Logo STKIP">
-                <div class="logo-text">
-                    <span class="name">Farhan Hidayat</span>
-                    <span class="npm">PGSD 24</span>
-                </div>
+            <div class="sys-status">
+                <span class="blink">[_]</span> SYSTEM STATUS: ONLINE | USER: FARHAN
             </div>
             <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-terminal"></i>
             </div>
             <div class="nav-links">
-                <a data-section="Beranda" class="active">Beranda</a>
-                <a data-section="Tentang">Tentang</a>
-                <a data-section="Karya">Karya</a>
-                <a data-section="Kemampuan">Skills</a>
-                <a data-section="Dokumen">Dokumen</a> 
-                <a data-section="Saran" class="btn-contact">Kontak</a>
+                <a data-section="Beranda" class="active">./HOME</a>
+                <a data-section="Tentang">./ABOUT</a>
+                <a data-section="Karya">./PROJECTS</a>
+                <a data-section="Kemampuan">./SKILLS</a>
+                <a data-section="Dokumen">./DOCS</a> 
+                <a data-section="Saran" class="btn-contact">[ CONTACT_ME ]</a>
             </div>
         </div>
     </nav>
 
-    <main class="container">
+    <main class="container main-interface">
         
         <section id="Beranda" class="content-section active">
-            <div class="hero-wrapper glass-card">
-                <div class="hero-text">
-                    <span class="greeting">Halo, Saya</span>
-                    <h1>Farhan Hidayat</h1>
-                    <div class="typing-wrapper">
-                        <span class="static-text">I am </span>
-                        <span class="typewriter-text"></span>
-                    </div>
-                    <p class="bio">Mahasiswa PGSD yang berdedikasi mengembangkan kualitas pendidikan melalui integrasi teknologi dan pedagogi modern.</p>
-                    
-                    <div class="social-links">
-                        <a href="https://wa.me/6285768732366" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/han_hanv/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://github.com/farhanhidayat-01" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.youtube.com/@roam6_9" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="https://stkipalitb.ac.id/" target="_blank" title="Kampus"><i class="fas fa-university"></i></a>
-                    </div>
-                    
-                    <div class="cta-group">
-                        <a href="https://wa.me/6285768732366" class="btn btn-primary">Hubungi Saya <i class="fas fa-paper-plane"></i></a>
-                        <a href="#Karya" class="btn btn-outline">Lihat Karya</a>
-                    </div>
+            <div class="terminal-window hero-terminal">
+                <div class="terminal-header">
+                    <div class="term-buttons"><span></span><span></span><span></span></div>
+                    <span class="term-title">root@farhan:~# initialize_profile.sh</span>
                 </div>
-                <div class="hero-image">
-                    <div class="img-border">
-                        <img src="farhan.png" alt="Farhan Hidayat">
+                <div class="terminal-body hero-wrapper">
+                    <div class="hero-text">
+                        <span class="prompt">> Target acquired:</span>
+                        <h1 class="glitch" data-text="FARHAN HIDAYAT">FARHAN HIDAYAT</h1>
+                        <div class="typing-wrapper">
+                            <span class="prompt">$ current_role: </span>
+                            <span class="typewriter-text"></span><span class="cursor">_</span>
+                        </div>
+                        <p class="bio-terminal">
+                            <span class="comment"># Bio Data Loaded:</span><br>
+                            [PROCESS] Dedikasi pada pengembangan kualitas pendidikan.<br>
+                            [METHOD] Integrasi teknologi & pedagogi modern.<br>
+                            [STATUS] Mahasiswa PGSD / Web Enthusiast.
+                        </p>
+                        
+                        <div class="cta-group">
+                            <a href="https://wa.me/6285768732366" class="btn-hack">[ EXECUTE CONTACT ]</a>
+                            <a href="#Karya" class="btn-hack-outline">Is -la projects/</a>
+                        </div>
+                         <div class="social-links-terminal">
+                            <a href="https://wa.me/6285768732366" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/han_hanv/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/farhanhidayat-01" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.youtube.com/@roam6_9" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-image-hacker">
+                        <div class="scanner-frame">
+                            <img src="farhan.png" alt="Farhan Hidayat">
+                            <div class="scan-line"></div>
+                        </div>
+                        <div class="img-data">ID: 24020030 // PGSD-24</div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="Tentang" class="content-section">
-            <div class="section-title">
-                <h2>Tentang Saya</h2>
-                <div class="line"></div>
-            </div>
-            <div class="row glass-card">
-                <div class="about-content">
-                    <h3>Visi & Misi Pendidikan</h3>
-                    <p>Sebagai mahasiswa NPM 24020030 di STKIP Al Islam Tunas Bangsa, saya memiliki fokus mendalam pada teknologi pendidikan. Saya percaya bahwa masa depan pengajaran terletak pada keseimbangan antara metode konvensional dan inovasi digital.</p>
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <i class="fas fa-graduation-cap"></i>
+            <div class="terminal-window">
+                 <div class="terminal-header">
+                    <div class="term-buttons"><span></span><span></span><span></span></div>
+                    <span class="term-title">root@farhan:~# cat about_me.txt</span>
+                </div>
+                <div class="terminal-body">
+                    <h3><span class="prompt">></span> SYSTEM_VISION & MISSION</h3>
+                    <p class="terminal-p">Sebagai unit NPM 24020030 di STKIP Al Islam Tunas Bangsa, fokus utama adalah menyeimbangkan metode konvensional dengan inovasi digital dalam infrastruktur pendidikan.</p>
+                    <div class="info-grid-hack">
+                        <div class="hack-box">
+                            <i class="fas fa-graduation-cap icon-hack"></i>
                             <div>
-                                <h4>Pendidikan</h4>
-                                <p>S1 PGSD (Sedang Menempuh)</p>
+                                <h4>[ EDUCATION DATABASE ]</h4>
+                                <p>S1 PGSD (In Progress)</p>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-code"></i>
+                        <div class="hack-box">
+                            <i class="fas fa-code icon-hack"></i>
                             <div>
-                                <h4>Minat</h4>
-                                <p>Web Development & EdTech</p>
+                                <h4>[ INTERESTS ]</h4>
+                                <p>Web Dev & EdTech Security</p>
                             </div>
                         </div>
                     </div>
@@ -96,107 +107,128 @@
         </section>
 
         <section id="Kemampuan" class="content-section">
-            <div class="section-title">
-                <h2>Kemampuan</h2>
-                <div class="line"></div>
-            </div>
-            <div class="skills-wrapper">
-                <div class="glass-card skill-box">
-                    <h3><i class="fas fa-chalkboard-teacher"></i> Pedagogi</h3>
-                    <div class="skill-bar-wrapper">
-                        <label>Desain Instruksional</label>
-                        <div class="progress-bg"><div class="progress-fill" style="width: 90%"></div></div>
-                    </div>
-                    <div class="skill-bar-wrapper">
-                        <label>Manajemen Kelas</label>
-                        <div class="progress-bg"><div class="progress-fill" style="width: 85%"></div></div>
-                    </div>
+             <div class="terminal-window">
+                 <div class="terminal-header">
+                    <div class="term-buttons"><span></span><span></span><span></span></div>
+                    <span class="term-title">root@farhan:~# run diagnostics --skills</span>
                 </div>
-                
-                <div class="glass-card skill-box">
-                    <h3><i class="fas fa-laptop-code"></i> Teknologi</h3>
-                    <div class="skill-bar-wrapper">
-                        <label>HTML / CSS / JS</label>
-                        <div class="progress-bg"><div class="progress-fill" style="width: 92%"></div></div>
+                <div class="terminal-body skills-wrapper-hack">
+                    <div class="skill-col">
+                        <h3><span class="prompt">></span> PEDAGOGY_MODULES</h3>
+                        <div class="hack-progress">
+                            <label>Desain Instruksional [90%]</label>
+                            <div class="p-bar"><div class="p-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="hack-progress">
+                            <label>Manajemen Kelas [85%]</label>
+                            <div class="p-bar"><div class="p-fill" style="width: 85%"></div></div>
+                        </div>
                     </div>
-                    <div class="skill-bar-wrapper">
-                        <label>Media Pembelajaran Digital</label>
-                        <div class="progress-bg"><div class="progress-fill" style="width: 88%"></div></div>
+                    
+                    <div class="skill-col">
+                        <h3><span class="prompt">></span> TECH_STACK</h3>
+                        <div class="hack-progress">
+                            <label>HTML / CSS / JS [92%]</label>
+                            <div class="p-bar"><div class="p-fill" style="width: 92%"></div></div>
+                        </div>
+                        <div class="hack-progress">
+                            <label>Digital Learning Tools [88%]</label>
+                            <div class="p-bar"><div class="p-fill" style="width: 88%"></div></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
+        
         <section id="Karya" class="content-section">
-            <div class="section-title">
-                <h2>Karya & Proyek</h2>
-                <div class="line"></div>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card glass-card">
-                    <div class="card-icon"><i class="fas fa-desktop"></i></div>
-                    <h3>Web Media Pembelajaran</h3>
-                    <p>Platform interaktif berbasis web untuk membantu penyampaian materi kurikulum sekolah dasar secara visual.</p>
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="term-buttons"><span></span><span></span><span></span></div>
+                    <span class="term-title">root@farhan:~# access portfolio_dir/</span>
                 </div>
-                <div class="project-card glass-card">
-                    <div class="card-icon"><i class="fas fa-book-reader"></i></div>
-                    <h3>Jurnal Ilmiah (AJP)</h3>
-                    <p>Referensi artikel ilmiah dan publikasi penelitian dari STKIP Al-Islam Tunas Bangsa.</p>
-                    <a href="https://journal.stkipalitb.ac.id/index.php/ajp" target="_blank" class="text-link">Kunjungi Jurnal <i class="fas fa-arrow-right"></i></a>
+                <div class="terminal-body">
+                    <div class="projects-grid-hack">
+                        <div class="project-item-hack">
+                            <div class="folder-icon"><i class="fas fa-folder-open"></i></div>
+                            <div class="folder-info">
+                                <h3>Web Media Pembelajaran.exe</h3>
+                                <p>Platform interaktif visual untuk kurikulum SD.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="project-item-hack">
+                            <div class="folder-icon"><i class="fas fa-database"></i></div>
+                            <div class="folder-info">
+                                <h3>Jurnal Ilmiah (AJP)</h3>
+                                <p>Referensi publikasi penelitian STKIP.</p>
+                                <a href="https://journal.stkipalitb.ac.id/index.php/ajp" target="_blank" class="hack-link">[ ACCESS_DATABASE ]</a>
+                            </div>
+                        </div>
+
+                        <div class="project-item-hack">
+                            <div class="folder-icon"><i class="fas fa-globe"></i></div>
+                            <div class="folder-info">
+                                <h3>WEB_PROJECT_DEPLOY.html</h3>
+                                <p>Akses langsung ke project web eksperimen terbaru.</p>
+                                <a href="https://farhanhidayat-01.github.io/Project-/" target="_blank" class="hack-link">[ LAUNCH_SITE ]</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="Dokumen" class="content-section">
-            <div class="section-title">
-                <h2>Dokumen Akademik</h2>
-                <div class="line"></div>
-            </div>
-            <div class="doc-container glass-card">
-                <div class="doc-icon">
-                    <i class="fas fa-file-pdf"></i>
+            <div class="terminal-window">
+                 <div class="terminal-header">
+                    <div class="term-buttons"><span></span><span></span><span></span></div>
+                    <span class="term-title">root@farhan:~# decrypt academic_docs/</span>
                 </div>
-                <div class="doc-info">
-                    <h3>Modul Ajar: Norma Kehidupan</h3>
-                    <span class="tag">Desain Pembelajaran</span>
-                    <span class="tag">Fase C / Kelas V</span>
-                    <p>Modul ajar Pendidikan Pancasila kurikulum merdeka.</p>
-                </div>
-                <div class="doc-actions">
-                    <a href="modul.pdf" target="_blank" class="btn btn-outline">Baca</a>
-                    <a href="modul.pdf" download class="btn btn-primary">Unduh</a>
+                <div class="terminal-body doc-hack-container">
+                    <i class="fas fa-file-code doc-hack-icon"></i>
+                    <div class="doc-hack-info">
+                        <h3>MODUL_AJAR_NORMA.pdf</h3>
+                        <p><span class="prompt">></span> Metadata: Fase C / Kelas V / Kurikulum Merdeka</p>
+                        <div class="doc-hack-actions">
+                            <a href="modul.pdf" target="_blank" class="btn-hack-sm">[ READ ]</a>
+                            <a href="modul.pdf" download class="btn-hack-sm">[ DOWNLOAD ]</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="Saran" class="content-section">
-            <div class="section-title">
-                <h2>Kotak Saran</h2>
-                <div class="line"></div>
-            </div>
-            <div class="contact-wrapper glass-card">
-                <form action="https://formspree.io/f/xdaovqwz" method="POST">
-                    <div class="input-group">
-                        <input type="text" name="nama" required>
-                        <label>Nama Lengkap</label>
-                    </div>
-                    <div class="input-group">
-                        <input type="email" name="email" required>
-                        <label>Alamat Email</label>
-                    </div>
-                    <div class="input-group">
-                        <textarea name="pesan" required></textarea>
-                        <label>Pesan Anda</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary full-width">Kirim Pesan</button>
-                </form>
+            <div class="terminal-window">
+                 <div class="terminal-header">
+                    <div class="term-buttons"><span></span><span></span><span></span></div>
+                    <span class="term-title">root@farhan:~# send_message.sh</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="prompt" style="margin-bottom: 20px;">> Establishing secure connection...</p>
+                    <form action="https://formspree.io/f/xdaovqwz" method="POST" class="hack-form">
+                        <div class="hack-input-group">
+                            <label>USER.NAME:</label>
+                            <input type="text" name="nama" required placeholder="Enter identification...">
+                        </div>
+                        <div class="hack-input-group">
+                            <label>USER.EMAIL:</label>
+                            <input type="email" name="email" required placeholder="Enter return address...">
+                        </div>
+                        <div class="hack-input-group">
+                            <label>DATA.PACKET (Message):</label>
+                            <textarea name="pesan" required placeholder="Input data..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-hack full-width">>>> TRANSMIT DATA <<<</button>
+                    </form>
+                </div>
             </div>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Farhan Hidayat. Built with <i class="fas fa-code"></i> & <i class="fas fa-heart"></i></p>
+        <p>[SYSTEM TIME: 2026] // Built with <i class="fas fa-code"></i> & COFFEINE</p>
     </footer>
 
     <script src="script.js"></script>
