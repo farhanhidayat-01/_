@@ -3,31 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SYSTEM.ROOT | Farhan Hidayat</title>
+    <title>SISTEM.ROOT | Farhan Hidayat</title>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=VT323&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <div id="welcome-screen">
+        <div class="welcome-content">
+            <div class="welcome-text">
+                <span class="cmd-line">> Inisialisasi Protokol Pendidikan...</span><br>
+                <span class="cmd-line">> Memuat Tata Krama & Etika...</span><br>
+                <span class="cmd-line">> Menyiapkan Data Akademik...</span><br>
+                <br>
+                <h1 class="welcome-title">ASSALAMU'ALAIKUM</h1>
+                <p>Selamat Datang di Ruang Digital Farhan Hidayat</p>
+            </div>
+            <button id="enter-btn" class="btn-hack">[ MASUK KE SISTEM ]</button>
+        </div>
+    </div>
+
     <canvas id="matrix-bg"></canvas>
     <div class="scanlines"></div>
     
     <nav class="navbar">
         <div class="container nav-container">
             <div class="sys-status">
-                <span class="blink">[_]</span> SYSTEM STATUS: ONLINE | USER: FARHAN
+                <span class="blink">[_]</span> STATUS SISTEM: ONLINE | PENGGUNA: TAMU
             </div>
             <div class="menu-btn">
                 <i class="fas fa-terminal"></i>
             </div>
             <div class="nav-links">
-                <a data-section="Beranda" class="active">./HOME</a>
-                <a data-section="Tentang">./ABOUT</a>
-                <a data-section="Karya">./PROJECTS</a>
-                <a data-section="Kemampuan">./SKILLS</a>
-                <a data-section="Dokumen">./DOCS</a> 
-                <a data-section="Saran" class="btn-contact">[ CONTACT_ME ]</a>
+                <a data-section="Beranda" class="active">./BERANDA</a>
+                <a data-section="Tentang">./TENTANG</a>
+                <a data-section="Karya">./KARYA</a>
+                <a data-section="Kemampuan">./KEMAMPUAN</a>
+                <a data-section="Dokumen">./DOKUMEN</a> 
+                <a data-section="Saran" class="btn-contact">[ HUBUNGI_SAYA ]</a>
             </div>
         </div>
     </nav>
@@ -38,26 +52,26 @@
             <div class="terminal-window hero-terminal">
                 <div class="terminal-header">
                     <div class="term-buttons"><span></span><span></span><span></span></div>
-                    <span class="term-title">root@farhan:~# initialize_profile.sh</span>
+                    <span class="term-title">root@farhan:~# inisialisasi_profil.sh</span>
                 </div>
                 <div class="terminal-body hero-wrapper">
                     <div class="hero-text">
-                        <span class="prompt">> Target acquired:</span>
+                        <span class="prompt">> Pengguna terdeteksi:</span>
                         <h1 class="glitch" data-text="FARHAN HIDAYAT">FARHAN HIDAYAT</h1>
                         <div class="typing-wrapper">
-                            <span class="prompt">$ current_role: </span>
+                            <span class="prompt">$ status_saat_ini: </span>
                             <span class="typewriter-text"></span><span class="cursor">_</span>
                         </div>
                         <p class="bio-terminal">
-                            <span class="comment"># Bio Data Loaded:</span><br>
-                            [PROCESS] Dedikasi pada pengembangan kualitas pendidikan.<br>
-                            [METHOD] Integrasi teknologi & pedagogi modern.<br>
-                            [STATUS] Mahasiswa PGSD / Web Enthusiast.
+                            <span class="comment"># Memuat Data Biodata... Sukses.</span><br>
+                            [MISI] Mengembangkan inovasi teknologi web untuk dunia pendidikan.<br>
+                            [MINAT] Fokus mendalam pada Teknologi Pendidikan (Ed-Tech).<br>
+                            [PERAN] Mahasiswa PGSD & Pengembang Media Ajar Digital.
                         </p>
                         
                         <div class="cta-group">
-                            <a href="https://wa.me/6285768732366" class="btn-hack">[ EXECUTE CONTACT ]</a>
-                            <a href="#Karya" class="btn-hack-outline">Is -la projects/</a>
+                            <a href="https://wa.me/6285768732366" class="btn-hack">[ KONTAK SEKARANG ]</a>
+                            <a href="#Karya" class="btn-hack-outline">lihat_karya/</a>
                         </div>
                          <div class="social-links-terminal">
                             <a href="https://wa.me/6285768732366" target="_blank"><i class="fab fa-whatsapp"></i></a>
@@ -71,7 +85,7 @@
                             <img src="farhan.png" alt="Farhan Hidayat">
                             <div class="scan-line"></div>
                         </div>
-                        <div class="img-data">ID: 24020030 // PGSD-24</div>
+                        <div class="img-data">NPM: 24020030 // PGSD-24</div>
                     </div>
                 </div>
             </div>
@@ -81,24 +95,26 @@
             <div class="terminal-window">
                  <div class="terminal-header">
                     <div class="term-buttons"><span></span><span></span><span></span></div>
-                    <span class="term-title">root@farhan:~# cat about_me.txt</span>
+                    <span class="term-title">root@farhan:~# baca tentang_saya.txt</span>
                 </div>
                 <div class="terminal-body">
-                    <h3><span class="prompt">></span> SYSTEM_VISION & MISSION</h3>
-                    <p class="terminal-p">Sebagai unit NPM 24020030 di STKIP Al Islam Tunas Bangsa, fokus utama adalah menyeimbangkan metode konvensional dengan inovasi digital dalam infrastruktur pendidikan.</p>
+                    <h3><span class="prompt">></span> VISI & PENGEMBANGAN TEKNOLOGI</h3>
+                    <p class="terminal-p">
+                        Saya memiliki ketertarikan yang kuat dalam memadukan ilmu pendidikan dasar dengan kemajuan teknologi. Cita-cita saya adalah menciptakan ekosistem belajar digital yang interaktif, mudah diakses, dan tetap menjunjung tinggi nilai-nilai karakter serta sopan santun.
+                    </p>
                     <div class="info-grid-hack">
                         <div class="hack-box">
-                            <i class="fas fa-graduation-cap icon-hack"></i>
+                            <i class="fas fa-layer-group icon-hack"></i>
                             <div>
-                                <h4>[ EDUCATION DATABASE ]</h4>
-                                <p>S1 PGSD (In Progress)</p>
+                                <h4>[ FOKUS UTAMA ]</h4>
+                                <p>Pengembangan Media Pembelajaran Web</p>
                             </div>
                         </div>
                         <div class="hack-box">
                             <i class="fas fa-code icon-hack"></i>
                             <div>
-                                <h4>[ INTERESTS ]</h4>
-                                <p>Web Dev & EdTech Security</p>
+                                <h4>[ KEAHLIAN ]</h4>
+                                <p>HTML5, CSS3, JS & Inovasi Ed-Tech</p>
                             </div>
                         </div>
                     </div>
@@ -110,11 +126,11 @@
              <div class="terminal-window">
                  <div class="terminal-header">
                     <div class="term-buttons"><span></span><span></span><span></span></div>
-                    <span class="term-title">root@farhan:~# run diagnostics --skills</span>
+                    <span class="term-title">root@farhan:~# cek_diagnostik --kemampuan</span>
                 </div>
                 <div class="terminal-body skills-wrapper-hack">
                     <div class="skill-col">
-                        <h3><span class="prompt">></span> PEDAGOGY_MODULES</h3>
+                        <h3><span class="prompt">></span> MODUL PEDAGOGIK</h3>
                         <div class="hack-progress">
                             <label>Desain Instruksional [90%]</label>
                             <div class="p-bar"><div class="p-fill" style="width: 90%"></div></div>
@@ -126,13 +142,13 @@
                     </div>
                     
                     <div class="skill-col">
-                        <h3><span class="prompt">></span> TECH_STACK</h3>
+                        <h3><span class="prompt">></span> TEKNOLOGI WEB</h3>
                         <div class="hack-progress">
                             <label>HTML / CSS / JS [92%]</label>
                             <div class="p-bar"><div class="p-fill" style="width: 92%"></div></div>
                         </div>
                         <div class="hack-progress">
-                            <label>Digital Learning Tools [88%]</label>
+                            <label>Alat Pembelajaran Digital [88%]</label>
                             <div class="p-bar"><div class="p-fill" style="width: 88%"></div></div>
                         </div>
                     </div>
@@ -144,7 +160,7 @@
             <div class="terminal-window">
                 <div class="terminal-header">
                     <div class="term-buttons"><span></span><span></span><span></span></div>
-                    <span class="term-title">root@farhan:~# access portfolio_dir/</span>
+                    <span class="term-title">root@farhan:~# akses direktori_karya/</span>
                 </div>
                 <div class="terminal-body">
                     <div class="projects-grid-hack">
@@ -161,16 +177,16 @@
                             <div class="folder-info">
                                 <h3>Jurnal Ilmiah (AJP)</h3>
                                 <p>Referensi publikasi penelitian STKIP.</p>
-                                <a href="https://journal.stkipalitb.ac.id/index.php/ajp" target="_blank" class="hack-link">[ ACCESS_DATABASE ]</a>
+                                <a href="https://journal.stkipalitb.ac.id/index.php/ajp" target="_blank" class="hack-link">[ AKSES DATABASE ]</a>
                             </div>
                         </div>
 
                         <div class="project-item-hack">
                             <div class="folder-icon"><i class="fas fa-globe"></i></div>
                             <div class="folder-info">
-                                <h3>WEB_PROJECT_DEPLOY.html</h3>
-                                <p>Akses langsung ke project web eksperimen terbaru.</p>
-                                <a href="https://farhanhidayat-01.github.io/Project-/" target="_blank" class="hack-link">[ LAUNCH_SITE ]</a>
+                                <h3>PROYEK_WEB_DEPLOY.html</h3>
+                                <p>Eksperimen teknologi web terbaru saya.</p>
+                                <a href="https://farhanhidayat-01.github.io/Project-/" target="_blank" class="hack-link">[ BUKA SITUS ]</a>
                             </div>
                         </div>
                     </div>
@@ -182,7 +198,7 @@
             <div class="terminal-window">
                  <div class="terminal-header">
                     <div class="term-buttons"><span></span><span></span><span></span></div>
-                    <span class="term-title">root@farhan:~# decrypt academic_docs/</span>
+                    <span class="term-title">root@farhan:~# buka dokumen_akademik/</span>
                 </div>
                 <div class="terminal-body doc-hack-container">
                     <i class="fas fa-file-code doc-hack-icon"></i>
@@ -190,8 +206,8 @@
                         <h3>MODUL_AJAR_NORMA.pdf</h3>
                         <p><span class="prompt">></span> Metadata: Fase C / Kelas V / Kurikulum Merdeka</p>
                         <div class="doc-hack-actions">
-                            <a href="modul.pdf" target="_blank" class="btn-hack-sm">[ READ ]</a>
-                            <a href="modul.pdf" download class="btn-hack-sm">[ DOWNLOAD ]</a>
+                            <a href="modul.pdf" target="_blank" class="btn-hack-sm">[ BACA ]</a>
+                            <a href="modul.pdf" download class="btn-hack-sm">[ UNDUH ]</a>
                         </div>
                     </div>
                 </div>
@@ -202,24 +218,24 @@
             <div class="terminal-window">
                  <div class="terminal-header">
                     <div class="term-buttons"><span></span><span></span><span></span></div>
-                    <span class="term-title">root@farhan:~# send_message.sh</span>
+                    <span class="term-title">root@farhan:~# kirim_pesan.sh</span>
                 </div>
                 <div class="terminal-body">
-                    <p class="prompt" style="margin-bottom: 20px;">> Establishing secure connection...</p>
+                    <p class="prompt" style="margin-bottom: 20px;">> Membangun koneksi aman untuk komunikasi...</p>
                     <form action="https://formspree.io/f/xdaovqwz" method="POST" class="hack-form">
                         <div class="hack-input-group">
-                            <label>USER.NAME:</label>
-                            <input type="text" name="nama" required placeholder="Enter identification...">
+                            <label>NAMA.LENGKAP:</label>
+                            <input type="text" name="nama" required placeholder="Masukkan identitas anda...">
                         </div>
                         <div class="hack-input-group">
-                            <label>USER.EMAIL:</label>
-                            <input type="email" name="email" required placeholder="Enter return address...">
+                            <label>EMAIL.PENGIRIM:</label>
+                            <input type="email" name="email" required placeholder="Masukkan alamat email...">
                         </div>
                         <div class="hack-input-group">
-                            <label>DATA.PACKET (Message):</label>
-                            <textarea name="pesan" required placeholder="Input data..."></textarea>
+                            <label>PESAN.ANDA (Harap Sopan):</label>
+                            <textarea name="pesan" required placeholder="Tulis pesan anda di sini..."></textarea>
                         </div>
-                        <button type="submit" class="btn-hack full-width">>>> TRANSMIT DATA <<<</button>
+                        <button type="submit" class="btn-hack full-width">>>> KIRIM DATA <<<</button>
                     </form>
                 </div>
             </div>
@@ -228,7 +244,7 @@
     </main>
 
     <footer>
-        <p>[SYSTEM TIME: 2026] // Built with <i class="fas fa-code"></i> & COFFEINE</p>
+        <p>[WAKTU SISTEM: 2026] // Dibuat dengan <i class="fas fa-code"></i> & KESOPANAN</p>
     </footer>
 
     <script src="script.js"></script>
