@@ -1,76 +1,93 @@
-        // DOM Elements
-        const menuBtn = document.querySelector('.menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        const navItems = document.querySelectorAll('.nav-links a');
-        const contentSections = document.querySelectorAll('.content-section');
+// DOM Elements
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+const navItems = document.querySelectorAll('.nav-links a');
+const contentSections = document.querySelectorAll('.content-section');
 
-        // Toggle mobile menu
-        menuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+// Toggle Mobile Menu
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    // Ubah ikon dari bars ke times (X)
+    const icon = menuBtn.querySelector('i');
+    if (navLinks.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    }
+});
 
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-links') && !e.target.closest('.menu-btn')) {
-                navLinks.classList.remove('active');
-            }
-        });
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-links') && !e.target.closest('.menu-btn')) {
+        navLinks.classList.remove('active');
+        menuBtn.querySelector('i').classList.remove('fa-times');
+        menuBtn.querySelector('i').classList.add('fa-bars');
+    }
+});
 
-        // Handle navigation
+// Handle Navigation
 navItems.forEach(item => {
-    item.addEventListener('click', () => {
-        // Update active nav item
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // Remove active class from all links
         navItems.forEach(nav => nav.classList.remove('active'));
+        // Add active class to clicked link
         item.classList.add('active');
 
-        // Show corresponding section
-        const sectionId = item.getAttribute('data-section');
+        // Hide all sections
         contentSections.forEach(section => {
             section.classList.remove('active');
-            // Menyesuaikan ID section dengan atribut data-section
-            if (section.id === sectionId) {
-                section.classList.add('active');
-            }
+            section.style.opacity = 0; // Reset opacity for fade in
         });
 
+        // Show target section
+        const sectionId = item.getAttribute('data-section');
+        const targetSection = document.getElementById(sectionId);
+        
+        if (targetSection) {
+            targetSection.classList.add('active');
+            // Small delay to allow CSS transition if needed
+            setTimeout(() => {
+                targetSection.style.opacity = 1;
+            }, 50);
+            
+            // Scroll to top of main content on mobile
+            if(window.innerWidth < 768) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // Close mobile menu
         navLinks.classList.remove('active');
+        menuBtn.querySelector('i').classList.remove('fa-times');
+        menuBtn.querySelector('i').classList.add('fa-bars');
     });
 });
 
+// Typewriter Effect
+const texts = ["FUTURE TEACHER", "WEB DEVELOPER", "ED-TECH ENTHUSIAST"];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
 
-        const texts = [
-            " CREATING AND DEVELOPING FUTURE TEACHERS."
-        ]
-        
-        let speed = 200;
-        
-        const textElements = document.querySelector(".typewriter-text")
-        
-        let textIndex = 0;
-        let charcterIndex = 0;
-        
-        function typeWriter() {
-            if(charcterIndex < texts[textIndex].length){
-                textElements.innerHTML += texts[textIndex].charAt(charcterIndex);
-                charcterIndex++;
-                setTimeout(typeWriter, speed); 
-            }
-            else{
-                setTimeout(eraseText, 1000)
-            }
-        }
-        
-        function eraseText() {
-            if(textElements.innerHTML.length > 0){
-                textElements.innerHTML = textElements.innerHTML.slice(0,-1)
-                setTimeout(eraseText, 50)
-            }
-            else{
-                textIndex = (textIndex + 1) % texts.length;
-                charcterIndex = 0;
-                setTimeout(typeWriter,500)
-            }
-        }
-        
-        window.onload = typeWriter;
-        
+(function type() {
+    if (count === texts.length) {
+        count = 0;
+    }
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.querySelector(".typewriter-text").textContent = letter;
+
+    if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 2000); // Tunggu 2 detik setelah selesai ngetik
+    } else {
+        setTimeout(type, 100);
+    }
+})();
