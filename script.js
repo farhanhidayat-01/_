@@ -9,11 +9,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission handling (example)
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    // Here you would typically send the form data to a server
-    // For this example, we'll just show an alert
-    alert('Thank you for your message! I will get back to you soon.');
-    this.reset();
-});
+// SAYA SUDAH MENGHAPUS KODE FORM YANG MENGHALANGI PENGIRIMAN EMAIL
